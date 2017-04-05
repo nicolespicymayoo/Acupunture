@@ -55,12 +55,12 @@ const TreatmentsList = styled.div`
 
 const TreatmentItem = styled.div`
 	text-align: center;
-	margin: 20px 40px;
+	margin: 30px 40px;
   li{
     list-style: none;
     line-height: 1.8;
     font-size: 1.03em;
-    padding-top: 4px;
+    padding-top: 8px;
   }
 `
 
@@ -68,5 +68,5 @@ const TreatmentTitle = styled.h3`
   font-size: 1.09em;
   letter-spacing: .5px;
   color: #E1A030;
-  padding-bottom: 3px;
+  padding-bottom: 15px;
 `

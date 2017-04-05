@@ -25,7 +25,7 @@ export default Header
 const HeaderContainer = styled.div`
   height: 530px;
 	overflow: hidden;
-	background: radial-gradient(center, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.32)), url('../static/stamford2.jpg');
+	background: radial-gradient(center, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.32)), url('../static/stamford2.jpg');
   background-position: center bottom;
   background-size: cover; 
   padding-top: 30px;
@@ -44,7 +44,6 @@ const HeaderText = styled.div`
 		letter-spacing: -.02em;
 	}
 `
-
   const HeaderTitle = styled.h1`
     font-family: 'Montserrat';
     font-size: 2.7em;
@@ -53,9 +52,11 @@ const HeaderText = styled.div`
 `
 
  const HeaderSubtitle = styled.h3`
+    padding-top: 20px;
     font-size: 1.25em;
     font-weight: 300;
-    line-height: .7;
+    line-height: 1.7;
+    text-shadow: 0 1px 5px rgba(0,0,0,.3);
 `
 
  const Button = styled.button`
@@ -67,11 +68,13 @@ const HeaderText = styled.div`
 		box-shadow: none;
 		border: none;
 		font-size: .95em;
+    letter-spacing: .4px;
 		&:hover{
 			cursor: pointer;
 			background-color: rgba(235,168,50,1);
 		}
 		&:focus{
 			border: none;
+      outline:0;
 		}
 `

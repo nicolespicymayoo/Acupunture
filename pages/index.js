@@ -28,7 +28,21 @@ export default () => (
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,500,700' rel='stylesheet' />
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
     <title>Jing Jiang Acupuncture & Herb Clinic | Over 20 Years Of Experience in Acupuncture and Chinese Medicine</title>
-
+     <style>{`
+        html, body {
+          font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+          Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+          font-size: 16px;
+          color: #373b4c;
+          margin: 0;
+          height: 100%;
+        }
+        p, h1, h2, h3 {
+          margin: 0;
+          padding: 0;
+        }
+      `}
+    </style>
     <meta name="description" content="Jing Jiang Acupuncture & Herbs Clinic is located in Stamford, CT and New York, NY. We provide acupuncture and chinese medicine services to our clients in Fairfield County, CT and New York, NY. We provide infertility support, traditional acupuncture, Chinese herbs, acupuncture for pain and migraines."/>
     <meta name="keywords" content="Acupuncture, Stamford, Westport, Greenwich, Norwalk, Fairfield County, CT, Connecticut, White Plains, Harrison, Westchester County, NY, New York, Manhattan, facial lift, menopause, infertility treatment, pain, migraines, Chinese herbs"/>
   </Head>

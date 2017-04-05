@@ -50,6 +50,7 @@ const ContactTitle = styled.div`
 `
 
 const SectionTitlePadding = styled(SectionTitle)`
+	margin-top: 40px;
 	margin-bottom: 0;
   font-size: 1.7em;
 `
@@ -70,7 +71,7 @@ const ContactItem = styled.div`
 	width: 50%;
 	display: inline-block;
 	text-align: center;
-	padding: 180px 0 100px;
+	padding: 200px 0 100px;
 	h2{
 	margin: 0;
 	}

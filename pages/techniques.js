@@ -52,7 +52,7 @@ const TechniqueItem = styled.div`
 
   p{
     letter-spacing: .38px;
-    font-size: 1.082em;
+    font-size: 1.095em;
   }
 `
 // first image is larger than others

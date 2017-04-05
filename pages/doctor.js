@@ -28,8 +28,9 @@ const DoctorText = styled.div`
   width: 380px;
   text-align: center;
   margin-left: 5%;
+  margin-top: 25px;
   p{
-    line-height: 1.7;
+    line-height: 1.8;
 	  font-size: 1.06em;
   }
 `

@@ -76,11 +76,11 @@ const TestimonialsContainer = styled.div`
 `
 
 const Testimonial = styled.div`
-	margin: 20px auto 0;
+	margin: 35px auto 0;
 	text-align: center;
 	width: 40%;
 	font-size: 1.24em;
-	line-height: 1.5;
+	line-height: 1.7;
 	font-family: 'Source Serif Pro';
 	height: 430px;
 `
@@ -91,7 +91,7 @@ const Quote = styled.div`
 
 const PatientName = styled.div`
 	font-style: italic;
-	font-size: .9em;
+	font-size: .94em;
 	margin-top: 30px;
 `
 

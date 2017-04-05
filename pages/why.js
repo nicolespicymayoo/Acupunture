@@ -28,13 +28,13 @@ const WhyText = styled.div`
 	clear: both;
 	float: right;
 	display: inline-block;
-	margin-top: 20px;
+	margin-top: 30px;
 	margin-right: 2%;
 	max-width: 340px;
 	p{
 		float: right;
 		line-height: 1.7;
-		font-size: 1.08em;
+		font-size: 1.1em;
     margin: 0;
 	}
 `
