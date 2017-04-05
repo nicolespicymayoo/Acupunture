@@ -1,41 +1,33 @@
 import React, { Component, PropTypes } from 'react'
 import styled from 'styled-components'
-import MenuPopover from './MenuPopover.js'
+import Menu from './Menu.js'
 
 export default class Navbar extends Component{
   state = {
-    popoverDisplayed: false
+    menuDisplayed: false
   }
 
-  togglePopover = (e) => {
-    this.state.popoverDisplayed ? 
-      this.setState({
-        popoverDisplayed: false
-      })
-    : 
-      this.setState({
-        popoverDisplayed: true
-      })
-      console.log(this.state.popoverDisplayed)
+  toggleMenu = () => {
+    this.setState(state => ({
+      menuDisplayed: !state.menuDisplayed
+    }))
   }
   render(){
     return(
       <div>
         <NavbarContainer>
           <MenuButton
-            onClick={(e) => this.togglePopover()}
+            onClick={this.toggleMenu}
           >
             <i className="fa fa-bars"></i>
             <span id="menu-button-text"> Menu</span>
           </MenuButton>
           <a href="tel:+1-914-843-1052"><div className="about"><i className="fa fa-phone"></i> 914-843-1052</div></a>
         </NavbarContainer>
-        {
-          this.state.popoverDisplayed ?
-            <MenuPopover displayed={this.state.popoverDisplayed} />
-          :
-            null
-        }
+          <Menu 
+            menuDisplayed={this.state.menuDisplayed} 
+            toggleMenu={this.toggleMenu}
+          />
         <Logo>
           <LogoIcon src="../static/logo.png"/>
           <LogoText>Jing Jiang Acupuncture & Herb Clinic</LogoText>

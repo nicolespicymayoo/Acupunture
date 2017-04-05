@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import SectionTitle from '../components/SectionTitle'
 
 const Pricing = () => (
-  <PricingContainer>
+  <PricingContainer id="pricing">
 		<SectionTitle>Our Pricing</SectionTitle>
 			<PricingList>
 				<PricingItem>

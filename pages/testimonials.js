@@ -47,7 +47,7 @@ export default class Testimonials extends Component {
 
 	render(){
 		return(
-			<TestimonialsContainer>
+			<TestimonialsContainer id="testimonials">
     		<SectionTitle>
       		What Our Patients Say...
     		</SectionTitle>
@@ -72,15 +72,15 @@ export default class Testimonials extends Component {
   
 
 const TestimonialsContainer = styled.div`
-	padding-top: 80px;	
+	padding-top: 70px;	
 `
 
 const Testimonial = styled.div`
 	margin: 20px auto 0;
 	text-align: center;
 	width: 40%;
-	font-size: 1.29em;
-	line-height: 1.43;
+	font-size: 1.24em;
+	line-height: 1.5;
 	font-family: 'Source Serif Pro';
 	height: 430px;
 `
@@ -91,6 +91,7 @@ const Quote = styled.div`
 
 const PatientName = styled.div`
 	font-style: italic;
+	font-size: .9em;
 	margin-top: 30px;
 `
 

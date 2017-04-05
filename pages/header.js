@@ -12,7 +12,9 @@ const Header = () => (
         <p>The most authentic traditional Chinese medical treatment</p>
         <p>in Stamford, CT and Harrison, NY.</p>
       </HeaderSubtitle>
-      <Button>Make an Appointment</Button>
+      <a href="#contact">
+        <Button>Make an Appointment</Button>
+      </a>
     </HeaderText>
   </HeaderContainer>
 )

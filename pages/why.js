@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import SectionTitle from '../components/SectionTitle.js'
 
 const Why = () => (
-  <WhyContainer>
+  <WhyContainer id="why">
 		<WhyText>
 			<SectionTitle>
       	Why Chinese Medicine?
@@ -34,7 +34,7 @@ const WhyText = styled.div`
 	p{
 		float: right;
 		line-height: 1.7;
-		font-size: 1.1em;
+		font-size: 1.08em;
     margin: 0;
 	}
 `

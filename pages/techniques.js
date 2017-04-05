@@ -3,7 +3,7 @@ import SectionTitle from '../components/SectionTitle.js'
 import styled from 'styled-components'
 
 const Techniques = () => (
-  <TechniquesContainer>
+  <TechniquesContainer id="techniques">
 		<SectionTitle>Our Techniques</SectionTitle>
     <TechniquesList>
       <TechniqueItem>
@@ -34,20 +34,19 @@ export default Techniques
 
 const TechniquesContainer = styled.div`
 	padding: 80px;
-  border-bottom: 1px solid #fafafa;
 `
 
 const TechniquesList = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: baseline;
-  margin: 90px 10px 100px;
+  margin: 90px 70px 100px;
 `
 
 const TechniqueItem = styled.div`
   text-align: center;
   img{
-      width: 85%;
+      width: 80%;
       margin-bottom: 30px;
   }
 
@@ -58,5 +57,5 @@ const TechniqueItem = styled.div`
 `
 // first image is larger than others
 const Img1 = styled.img`
-  width: 75% !important;  
+  width: 70% !important;  
 `

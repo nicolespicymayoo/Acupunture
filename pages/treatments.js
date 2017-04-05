@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import SectionTitle from '../components/SectionTitle.js'
 
 const Treatments = () => (
-  <TreatmentsContainer>
+  <TreatmentsContainer id="treatments">
 	<SectionTitle>What We Can Help You With</SectionTitle>
 	<TreatmentsList>
 		<TreatmentItem>
@@ -40,10 +40,11 @@ const Treatments = () => (
 export default Treatments
 
 const TreatmentsContainer = styled.div`
-	padding: 80px 40px 90px;
+	padding: 70px 40px 80px;
 	background-color: #fafafa;
 	h2{
-		text-align: center;}
+		text-align: center;
+	}
 `
 const TreatmentsList = styled.div`
 	display: flex;
@@ -54,17 +55,17 @@ const TreatmentsList = styled.div`
 
 const TreatmentItem = styled.div`
 	text-align: center;
-	margin: 40px;
+	margin: 20px 40px;
   li{
     list-style: none;
     line-height: 1.8;
-    font-size: 1.07em;
+    font-size: 1.03em;
     padding-top: 4px;
   }
 `
 
 const TreatmentTitle = styled.h3`
-  font-size: 1.082em;
+  font-size: 1.09em;
   letter-spacing: .5px;
   color: #E1A030;
   padding-bottom: 3px;

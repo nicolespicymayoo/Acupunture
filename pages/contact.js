@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import SectionTitle from '../components/SectionTitle'
 
 const Contact = () => (
-  <ContactContainer>
+  <ContactContainer id="contact">
 		<ContactTitle>
 			<SectionTitlePadding>
         Make an Appointment
