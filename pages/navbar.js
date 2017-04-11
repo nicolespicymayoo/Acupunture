@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import styled from 'styled-components'
 import Menu from './Menu.js'
+import { media, sizes } from './MediaSizes'
 
 
 const NavIcon = (props) => (
@@ -46,7 +47,6 @@ export default class Navbar extends Component{
 
   changeNavTextColor = () => {
    let position = document.body.scrollTop
-  //  console.log(position.scrollTop);
    if(position < 490){
      this.setState((state) => ({
         navTextColor: 'white'
@@ -56,7 +56,6 @@ export default class Navbar extends Component{
         navTextColor: 'black',
      }))
    }
-      console.log(this.state.navTextColor)
   }
 
   render(){
@@ -91,6 +90,7 @@ export default class Navbar extends Component{
   }
 }
 
+
 const NavbarContainer = styled.div`
   position: fixed;
   width: 100%;
@@ -100,6 +100,10 @@ const NavbarContainer = styled.div`
 	color: ${props => props.navTextColor};
   padding: 30px;
   font-size: 1.15em;
+  ${media.mobile`
+    height: 60px;
+    padding: 10px;
+  `}
 `
 const MenuButton = styled.div`
   color: ${props => props.navTextColor};
@@ -111,6 +115,7 @@ const MenuButton = styled.div`
     margin: 3px 0 0;
     padding-left: 3px;
     color: ${props => props.navTextColor};
+    ${media.tablet`display: none;`}
   }
   &:hover{ 
     cursor: pointer 
@@ -128,14 +133,20 @@ const PhoneNumber = styled.div`
     color: ${props => props.navTextColor};
     vertical-align: top;
   }
+  ${media.tablet`display: none;`}
 `
 
 const Logo = styled.div`
   text-align: center;
+  ${media.mobile`
+    margin: 10px auto 0;
+    width: 200px;
+  `}
 `
 
 const LogoIcon = styled.img`
   width: 70px;
+  ${media.mobile`width: 60px;`}
 `
 
 const LogoText = styled.h3`
@@ -145,4 +156,8 @@ const LogoText = styled.h3`
   letter-spacing: .5px;
   margin: 3px 0 0;
   color: #fff;
+  ${media.mobile`
+    font-size: .9em;
+    line-height: 1.5;
+  `}
 `

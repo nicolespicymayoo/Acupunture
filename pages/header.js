@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import css from 'next/css'
 import Navbar from './navbar'
 import styled from 'styled-components'
+import { media, sizes } from './MediaSizes' 
 
 const Header = () => (
   <HeaderContainer>
@@ -29,6 +30,8 @@ const HeaderContainer = styled.div`
   background-position: center bottom;
   background-size: cover; 
   padding-top: 30px;
+  ${media.tablet`height: 500px;`}
+  ${media.mobile`padding-top: 10px;`}
 `
 
 const HeaderText = styled.div`
@@ -43,12 +46,20 @@ const HeaderText = styled.div`
 		text-align: center;
 		letter-spacing: -.02em;
 	}
+  ${media.tablet`
+      margin-top: 80px;  
+  `}
+  ${media.mobile`
+      margin-top: 50px;
+  `}
 `
   const HeaderTitle = styled.h1`
     font-family: 'Montserrat';
     font-size: 2.7em;
     font-weight: 400;
     text-shadow: 2px 2px 10px rgba(0,0,0,.05);
+    ${media.tablet`font-size: 2em;`}
+
 `
 
  const HeaderSubtitle = styled.h3`
@@ -57,6 +68,7 @@ const HeaderText = styled.div`
     font-weight: 300;
     line-height: 1.7;
     text-shadow: 0 1px 5px rgba(0,0,0,.3);
+    ${media.tablet`font-size: 1.15em;`}
 `
 
  const Button = styled.button`
@@ -77,4 +89,8 @@ const HeaderText = styled.div`
 			border: none;
       outline:0;
 		}
+    ${media.tablet`
+      font-size: .89em;  
+      letter-spacing: .42px;
+    `}
 `
