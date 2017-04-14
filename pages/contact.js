@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import SectionTitle from '../components/SectionTitle'
+import mediaQuery from './mediaQuery'
 
 const Contact = () => (
   <ContactContainer id="contact">
@@ -53,6 +54,9 @@ const SectionTitlePadding = styled(SectionTitle)`
 	margin-top: 40px;
 	margin-bottom: 0;
   font-size: 1.7em;
+	${mediaQuery.mobile`
+		margin-top: 30px;
+	`}
 `
 
 const SectionSubtitle = styled.h2`
@@ -72,6 +76,7 @@ const ContactItem = styled.div`
 	display: inline-block;
 	text-align: center;
 	padding: 200px 0 100px;
+	background-size: cover;
 	h2{
 	margin: 0;
 	}
@@ -79,15 +84,25 @@ const ContactItem = styled.div`
 		font-size: 1.15em;
 		margin: 6px 0 16px;
 	}
-	background-size: cover;
+	${mediaQuery.btwnTabletAndMobile`
+		width: 100%;
+		display: block;
+		padding: 180px 0 40px;
+	`}
 `
 
 const ContactItemCT = styled(ContactItem)`
-	background: radial-gradient(left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1)), url('../static/newyork.jpg') no-repeat left;
+	background: radial-gradient(center, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1)), url('../static/stamford3.jpg') no-repeat left;
+		${mediaQuery.mobile`
+			padding: 200px 0 30px;
+		`}
 `
 
 const ContactItemNY = styled(ContactItem)`
-	background: radial-gradient(left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1)), url('../static/newyork.jpg') no-repeat left;
+	background: radial-gradient(center, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1)), url('../static/newyork.jpg') no-repeat left;
+	${mediaQuery.mobile`
+		padding: 50px 0;
+	`}
 `
 
 const ContactDay = styled.p`

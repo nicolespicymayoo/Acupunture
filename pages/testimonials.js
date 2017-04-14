@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import SectionTitle from '../components/SectionTitle'
-import TestimonialItem from './testimonialItem'
+import mediaQuery from './mediaQuery'
 
 const testimonials = [
 	{
@@ -73,20 +73,28 @@ export default class Testimonials extends Component {
 
 const TestimonialsContainer = styled.div`
 	padding-top: 70px;	
+	height: 600px;
+	${mediaQuery.mobile`padding-top: 40px; font-size: 1.1em`}
 `
 
-const Testimonial = styled.div`
+const Testimonial = styled.div`;
 	margin: 35px auto 0;
+	padding: 0 20px;
 	text-align: center;
-	width: 40%;
+	max-width: 450px;
 	font-size: 1.24em;
 	line-height: 1.7;
 	font-family: 'Source Serif Pro';
-	height: 430px;
+	${mediaQuery.mobile`
+		font-size: 1.12em; 
+		margin: 20px 0;
+		padding: 0 14px;
+		line-height: 1.6;
+	`}
+	
 `
 
 const Quote = styled.div`
-
 `
 
 const PatientName = styled.div`

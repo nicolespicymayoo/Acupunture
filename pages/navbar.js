@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import styled from 'styled-components'
 import Menu from './Menu.js'
-import { media, sizes } from './MediaSizes'
+import mediaQuery from './mediaQuery'
 
 
 const NavIcon = (props) => (
@@ -94,19 +94,16 @@ export default class Navbar extends Component{
 const NavbarContainer = styled.div`
   position: fixed;
   width: 100%;
-  height: 100px;
   display: flex;
   justify-content: space-between;
 	color: ${props => props.navTextColor};
-  padding: 30px;
+  padding: 0px;
   font-size: 1.15em;
-  ${media.mobile`
-    height: 60px;
-    padding: 10px;
-  `}
 `
 const MenuButton = styled.div`
   color: ${props => props.navTextColor};
+  margin: 40px;
+  ${mediaQuery.mobile`margin: 20px`}
   p{
     display: inline-block;
     vertical-align: top;
@@ -115,7 +112,7 @@ const MenuButton = styled.div`
     margin: 3px 0 0;
     padding-left: 3px;
     color: ${props => props.navTextColor};
-    ${media.tablet`display: none;`}
+    ${mediaQuery.tablet`display: none;`}
   }
   &:hover{ 
     cursor: pointer 
@@ -123,7 +120,7 @@ const MenuButton = styled.div`
 `
 
 const PhoneNumber = styled.div`
-  margin-right: 60px;
+  margin: 40px;
   color: ${props => props.navTextColor};
   a{
     text-decoration: none;
@@ -133,12 +130,13 @@ const PhoneNumber = styled.div`
     color: ${props => props.navTextColor};
     vertical-align: top;
   }
-  ${media.tablet`display: none;`}
+  ${mediaQuery.tablet`display: none;`}
 `
 
 const Logo = styled.div`
   text-align: center;
-  ${media.mobile`
+  padding-top: 30px;
+  ${mediaQuery.mobile`
     margin: 10px auto 0;
     width: 200px;
   `}
@@ -146,7 +144,7 @@ const Logo = styled.div`
 
 const LogoIcon = styled.img`
   width: 70px;
-  ${media.mobile`width: 60px;`}
+  ${mediaQuery.mobile`width: 60px;`}
 `
 
 const LogoText = styled.h3`
@@ -156,7 +154,7 @@ const LogoText = styled.h3`
   letter-spacing: .5px;
   margin: 3px 0 0;
   color: #fff;
-  ${media.mobile`
+  ${mediaQuery.mobile`
     font-size: .9em;
     line-height: 1.5;
   `}

@@ -62,4 +62,6 @@ export default () => (
 const Main = styled.div`
   font-family: 'Lato';
   letter-spacing: .2px;
+  margin: auto;
+  width: 100%;
 `

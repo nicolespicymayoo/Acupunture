@@ -1,6 +1,7 @@
 import React from 'react'
 import SectionTitle from '../components/SectionTitle.js'
 import styled from 'styled-components'
+import mediaQuery from './mediaQuery'
 
 const Techniques = () => (
   <TechniquesContainer id="techniques">
@@ -34,17 +35,20 @@ export default Techniques
 
 const TechniquesContainer = styled.div`
 	padding: 80px;
+  ${mediaQuery.mobile`padding: 60px 10px;`}
 `
 
 const TechniquesList = styled.div`
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
-  margin: 90px 70px 100px;
+  max-width: 1100px;
+  margin: 80px auto;
+  text-align: center;
 `
 
 const TechniqueItem = styled.div`
+  display: inline-block;
   text-align: center;
+  vertical-align: bottom;
+  margin: 35px;
   img{
       width: 80%;
       margin-bottom: 30px;
@@ -57,5 +61,5 @@ const TechniqueItem = styled.div`
 `
 // first image is larger than others
 const Img1 = styled.img`
-  width: 70% !important;  
+  width: 68% !important;  
 `

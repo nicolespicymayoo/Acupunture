@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import SectionTitle from '../components/SectionTitle'
+import mediaQuery from './mediaQuery'
 
 const Doctor = () => (
   <DoctorContainer id="doctor">
@@ -17,20 +18,31 @@ export default Doctor
 const DoctorContainer = styled.div`
   background: url('../static/jingjiang.jpg') no-repeat top left;
   background-size: cover;
-  height: 450px;
+  // height: 450px;
   padding: 30px 0;  
   border-bottom: 1px dotted rgba(0,0,0,.3);
   border-top: 1px dotted rgba(0,0,0,.1);
+  ${mediaQuery.tablet`background: none;`}
 `
 
 const DoctorText = styled.div`
   float: left;
-  width: 380px;
+  max-width: 380px;
   text-align: center;
   margin-left: 5%;
   margin-top: 25px;
   p{
     line-height: 1.8;
 	  font-size: 1.06em;
+    text-align: center;
   }
+  ${mediaQuery.tablet`
+    float: none;
+    margin: 25px auto; 
+    text-align: center;
+  `}
+  ${mediaQuery.mobile`
+    padding: 0 25px;
+    margin: 20px 0;
+  `}
 `

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import SectionTitle from '../components/SectionTitle.js'
-import { media, sizes } from './MediaSizes'
+import mediaQuery from './mediaQuery'
 
 const Treatments = () => (
   <TreatmentsContainer id="treatments">
@@ -62,7 +62,7 @@ const TreatmentItem = styled.div`
     line-height: 1.8;
     font-size: 1.03em;
     padding-top: 8px;
-		${media.mobile`line-height: 1.55;`}
+		${mediaQuery.mobile`line-height: 1.55;`}
   }
 `
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import SectionTitle from '../components/SectionTitle'
+import mediaQuery from './mediaQuery'
 
 const Pricing = () => (
   <PricingContainer id="pricing">
@@ -55,23 +56,24 @@ export default Pricing
 
 
 const PricingContainer = styled.div`
-	padding: 80px;
+	padding: 80px 0;
 	background-color: #fafafa;
 `
 const PricingList = styled.div`
-	display: flex;
-	justify-content: center;	
+	margin: auto;
+	text-align: center;	
 `
 
 const PricingItem = styled.div`
-	display: flex;
-	flex-flow: row-wrap;
-	flex-direction: column;
+	display: inline-block;
+	height: 295px;
+	vertical-align: top;
 	text-align: center;
 	margin: 35px 10px;
 	padding: 50px 10px;
 	border: 3px solid rgba(0,0,0,.1);
 	border-radius: 3px;
+	${mediaQuery.btwnTabletAndMobile`margin: 10px`}
 `
 const PricingTitle = styled.h3`
 	font-size: 1.3em;
@@ -81,14 +83,15 @@ const PricingTitle = styled.h3`
 const PricingSubtitle = styled.p`
 	margin: 0;
 	color: #eba832;
-	padding-top: 10px;
+	padding-top: 8px;
 	font-size: .9em;
 	letter-spacing: .34px;
 `
 
 const PricingDescription = styled.p`
 	width: 230px;
-	padding: 10px 25px 15px;
+	height: 62%;
+	margin: 15px 20px;
 	line-height: 1.45;
 	color: rgba(0,0,0,.6);
 	font-size: .98em;
@@ -98,6 +101,7 @@ const Price = styled.div`
 	vertical-align: baseline;
 	margin-top: auto; //pushes to bottom
 	bottom: 0;
+	vertical-align: bottom;
 	h3{
 		font-size: 1.35em;
 		font-weight: normal;

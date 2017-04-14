@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import SectionTitle from '../components/SectionTitle.js'
-import { media, sizes } from './MediaSizes'
+import mediaQuery from './MediaQuery'
 
 const Why = () => (
   <WhyContainer id="why">
@@ -23,7 +23,7 @@ const WhyContainer = styled.div`
 	height: 460px;
 	text-align: center;
 	padding: 50px 30px;
-	${media.tablet`height: 430px;`}
+	${mediaQuery.tablet`height: 430px;`}
 `
 
 const WhyText = styled.div`
@@ -38,7 +38,7 @@ const WhyText = styled.div`
 		line-height: 1.7;
 		font-size: 1.1em;
     margin: 0;
-		${media.tablet`font-size: 1.05em;`}
+		// ${mediaQuery.tablet`font-size: 1.05em;`}
 	}
 	
 `

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import css from 'next/css'
 import Navbar from './navbar'
 import styled from 'styled-components'
-import { media, sizes } from './MediaSizes' 
+import mediaQuery from './mediaQuery'
 
 const Header = () => (
   <HeaderContainer>
@@ -26,12 +26,10 @@ export default Header
 const HeaderContainer = styled.div`
   height: 530px;
 	overflow: hidden;
-	background: radial-gradient(center, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.32)), url('../static/stamford2.jpg');
+	background: radial-gradient(center, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.32)), url('../static/stamford2.jpg');
   background-position: center bottom;
   background-size: cover; 
-  padding-top: 30px;
-  ${media.tablet`height: 500px;`}
-  ${media.mobile`padding-top: 10px;`}
+  ${mediaQuery.tablet`height: 500px;`}
 `
 
 const HeaderText = styled.div`
@@ -46,10 +44,10 @@ const HeaderText = styled.div`
 		text-align: center;
 		letter-spacing: -.02em;
 	}
-  ${media.tablet`
+  ${mediaQuery.tablet`
       margin-top: 80px;  
   `}
-  ${media.mobile`
+  ${mediaQuery.mobile`
       margin-top: 50px;
   `}
 `
@@ -58,7 +56,7 @@ const HeaderText = styled.div`
     font-size: 2.7em;
     font-weight: 400;
     text-shadow: 2px 2px 10px rgba(0,0,0,.05);
-    ${media.tablet`font-size: 2em;`}
+    ${mediaQuery.tablet`font-size: 2em;`}
 
 `
 
@@ -68,7 +66,7 @@ const HeaderText = styled.div`
     font-weight: 300;
     line-height: 1.7;
     text-shadow: 0 1px 5px rgba(0,0,0,.3);
-    ${media.tablet`font-size: 1.15em;`}
+    ${mediaQuery.tablet`font-size: 1.15em;`}
 `
 
  const Button = styled.button`
@@ -89,7 +87,7 @@ const HeaderText = styled.div`
 			border: none;
       outline:0;
 		}
-    ${media.tablet`
+    ${mediaQuery.tablet`
       font-size: .89em;  
       letter-spacing: .42px;
     `}
