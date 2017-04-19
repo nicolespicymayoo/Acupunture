@@ -71,6 +71,7 @@ const PricingItem = styled.div`
 	text-align: center;
 	margin: 35px 10px;
 	padding: 50px 10px;
+	background-color: #fcfcfc;
 	border: 3px solid rgba(0,0,0,.1);
 	border-radius: 3px;
 	${mediaQuery.btwnTabletAndMobile`margin: 10px`}

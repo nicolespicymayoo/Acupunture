@@ -72,40 +72,41 @@ export default class Testimonials extends Component {
   
 
 const TestimonialsContainer = styled.div`
-	padding-top: 70px;	
-	height: 600px;
-	${mediaQuery.mobile`padding-top: 40px; font-size: 1.1em`}
+	padding: 70px 0 30px;	
+	${mediaQuery.mobile`
+		display: table;
+		padding-top: 40px; 
+		font-size: 1.1em
+	`}
 `
 
 const Testimonial = styled.div`;
 	margin: 35px auto 0;
 	padding: 0 20px;
-	text-align: center;
 	max-width: 450px;
-	font-size: 1.24em;
-	line-height: 1.7;
-	font-family: 'Source Serif Pro';
-	${mediaQuery.mobile`
-		font-size: 1.12em; 
-		margin: 20px 0;
-		padding: 0 14px;
-		line-height: 1.6;
-	`}
-	
+	text-align: center;
 `
 
 const Quote = styled.div`
+	font-size: 1.144em;
+	line-height: 1.7;
+	font-family: 'Lora';
+		${mediaQuery.mobile`
+		font-size: 1.1em; 
+		margin: 20px 0;
+		padding: 0 15px;
+		line-height: 1.6;
+	`}
 `
 
 const PatientName = styled.div`
-	font-style: italic;
-	font-size: .94em;
+	font-size: 1.1rem;
 	margin-top: 30px;
 `
 
 const Location = styled.div`
 	margin-top: 5px;
 	color: #E1A030;
-	font-size: .9em;
+	// font-size: .9em;
 	margin-bottom: 40px;
 `

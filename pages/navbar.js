@@ -31,7 +31,7 @@ export default class Navbar extends Component{
     window.addEventListener('scroll', this.changeNavTextColor)
   }
   componentWillUnmount() {
-    windowremoveEventListener('scroll', this.changeNavTextColor)
+    window.removeEventListener('scroll', this.changeNavTextColor)
   }
 
   state = {
@@ -103,7 +103,6 @@ const NavbarContainer = styled.div`
 const MenuButton = styled.div`
   color: ${props => props.navTextColor};
   margin: 40px;
-  ${mediaQuery.mobile`margin: 20px`}
   p{
     display: inline-block;
     vertical-align: top;
@@ -117,6 +116,7 @@ const MenuButton = styled.div`
   &:hover{ 
     cursor: pointer 
   }
+  ${mediaQuery.mobile`margin: 20px`}
 `
 
 const PhoneNumber = styled.div`
@@ -137,6 +137,7 @@ const Logo = styled.div`
   text-align: center;
   padding-top: 30px;
   ${mediaQuery.mobile`
+    padding-top: 20px;
     margin: 10px auto 0;
     width: 200px;
   `}
@@ -155,7 +156,7 @@ const LogoText = styled.h3`
   margin: 3px 0 0;
   color: #fff;
   ${mediaQuery.mobile`
-    font-size: .9em;
+    // font-size: .9em;
     line-height: 1.5;
   `}
 `

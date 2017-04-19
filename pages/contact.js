@@ -109,7 +109,6 @@ const ContactDay = styled.p`
 	color: #E1A030;
 	font-size: 1em;
 	letter-spacing: .3px;
-
 `
 
 const ContactAdress = styled.p`

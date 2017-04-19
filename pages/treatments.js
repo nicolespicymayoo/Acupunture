@@ -59,16 +59,22 @@ const TreatmentItem = styled.div`
 	margin: 30px 40px;
   li{
     list-style: none;
-    line-height: 1.8;
+    line-height: 1.63;
     font-size: 1.03em;
     padding-top: 8px;
-		${mediaQuery.mobile`line-height: 1.55;`}
   }
+	${mediaQuery.mobile`
+		li{
+			line-height: 1.5;
+			font-size: 1.075em;
+		}
+	`}
 `
 
 const TreatmentTitle = styled.h3`
-  font-size: 1.09em;
-  letter-spacing: .5px;
+	text-transform: uppercase;
+	font-size: .9em;
+  letter-spacing: .6px;
   color: #E1A030;
   padding-bottom: 15px;
 	vertical-align: bottom;

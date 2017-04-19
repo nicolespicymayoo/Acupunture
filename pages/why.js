@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import SectionTitle from '../components/SectionTitle.js'
-import mediaQuery from './MediaQuery'
+import mediaQuery from './mediaQuery'
 
 const Why = () => (
   <WhyContainer id="why">
@@ -20,10 +20,16 @@ export default Why
 const WhyContainer = styled.div`
 	background: radial-gradient(left, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.8)), url('../static/medicine4.jpg') no-repeat right;
 	background-size: cover;
-	height: 460px;
+	height: 450px;
 	text-align: center;
 	padding: 50px 30px;
-	${mediaQuery.tablet`height: 430px;`}
+	${mediaQuery.tablet`
+		margin: auto;
+		background: radial-gradient(left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.95)), url('../static/medicine4.jpg') no-repeat right;
+	`}
+		${mediaQuery.mobile`
+		height: 400px;
+	`}
 `
 
 const WhyText = styled.div`
@@ -38,7 +44,16 @@ const WhyText = styled.div`
 		line-height: 1.7;
 		font-size: 1.1em;
     margin: 0;
-		// ${mediaQuery.tablet`font-size: 1.05em;`}
 	}
-	
+	&:after{
+		clear: both;
+	}
+	${mediaQuery.tablet`
+		display: table;
+		width: 100%;
+		float: none;
+		margin-right: 0;
+		margin: auto;
+		text-align: center;
+	`}
 `

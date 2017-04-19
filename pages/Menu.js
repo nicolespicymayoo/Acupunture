@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 import styled from 'styled-components'
-import mediaQuery from './MediaQuery'
+import mediaQuery from './mediaQuery'
 
 const PhoneIcon = () => (
   <svg x="0px" y="0px"
@@ -88,7 +88,6 @@ const MenuItems = styled.ul`
   }
   ${mediaQuery.mobile`
     text-align: center;
-    font-size: 1em;
     a{
       padding: 18px 0;
       padding-left: 0;

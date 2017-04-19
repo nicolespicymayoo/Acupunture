@@ -55,5 +55,13 @@ describe('Handles edge cases correctly', () => {
     expect(isWindowsBash()).toBe(false);
 
     process = proc;
-  })
+  });
+
+  test("Should retrun false without a shell variable", () => {
+    const proc = process;
+    process.env.SHELL = {};
+    expect(isWindowsBash()).toBe(false);
+
+    process = proc;
+  });
 });

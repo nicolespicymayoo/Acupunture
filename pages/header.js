@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import css from 'next/css'
 import Navbar from './navbar'
 import styled from 'styled-components'
 import mediaQuery from './mediaQuery'
@@ -88,7 +87,6 @@ const HeaderText = styled.div`
       outline:0;
 		}
     ${mediaQuery.tablet`
-      font-size: .89em;  
       letter-spacing: .42px;
     `}
 `
