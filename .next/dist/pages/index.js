@@ -54,11 +54,58 @@ var _mediaQuery2 = _interopRequireDefault(_mediaQuery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var _jsxFileName = '/Users/nicolemayo/Desktop/acupuncture-react/pages/index.js?entry';
+
 var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n  font-family: \'Lato\';\n  font-size: 1em;\n  letter-spacing: .2px;\n  margin: auto;\n  width: 100%;\n  ', '\n\n'], ['\n  font-family: \'Lato\';\n  font-size: 1em;\n  letter-spacing: .2px;\n  margin: auto;\n  width: 100%;\n  ', '\n\n']),
     _templateObject2 = (0, _taggedTemplateLiteral3.default)(['font-size: 15px;'], ['font-size: 15px;']);
 
 exports.default = function () {
-  return _react2.default.createElement(Home, null, _react2.default.createElement(_header2.default, null), _react2.default.createElement(_why2.default, null), _react2.default.createElement(_treatments2.default, null), _react2.default.createElement(_techniques2.default, null), _react2.default.createElement(_doctor2.default, null), _react2.default.createElement(_pricing2.default, null), _react2.default.createElement(_testimonials2.default, null), _react2.default.createElement(_contact2.default, null));
+  return _react2.default.createElement(Home, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    }
+  }, _react2.default.createElement(_header2.default, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    }
+  }), _react2.default.createElement(_why2.default, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    }
+  }), _react2.default.createElement(_treatments2.default, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    }
+  }), _react2.default.createElement(_techniques2.default, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    }
+  }), _react2.default.createElement(_doctor2.default, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    }
+  }), _react2.default.createElement(_pricing2.default, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    }
+  }), _react2.default.createElement(_testimonials2.default, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    }
+  }), _react2.default.createElement(_contact2.default, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    }
+  }));
 };
 
 var Home = _styledComponents2.default.div(_templateObject, _mediaQuery2.default.mobile(_templateObject2));

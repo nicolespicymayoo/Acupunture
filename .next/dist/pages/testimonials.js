@@ -46,6 +46,8 @@ var _mediaQuery2 = _interopRequireDefault(_mediaQuery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var _jsxFileName = '/Users/nicolemayo/Desktop/acupuncture-react/pages/testimonials.js';
+
 var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n\tpadding: 70px 0 30px;\t\n\t', '\n'], ['\n\tpadding: 70px 0 30px;\t\n\t', '\n']),
     _templateObject2 = (0, _taggedTemplateLiteral3.default)(['\n\t\tdisplay: table;\n\t\tpadding-top: 40px; \n\t\tfont-size: 1.1em\n\t'], ['\n\t\tdisplay: table;\n\t\tpadding-top: 40px; \n\t\tfont-size: 1.1em\n\t']),
     _templateObject3 = (0, _taggedTemplateLiteral3.default)([';\n\tmargin: 35px auto 0;\n\tpadding: 0 20px;\n\tmax-width: 450px;\n\ttext-align: center;\n'], [';\n\tmargin: 35px auto 0;\n\tpadding: 0 20px;\n\tmax-width: 450px;\n\ttext-align: center;\n']),
@@ -107,7 +109,36 @@ var Testimonials = function (_Component) {
 	}, {
 		key: 'render',
 		value: function render() {
-			return _react2.default.createElement(TestimonialsContainer, { id: 'testimonials' }, _react2.default.createElement(_SectionTitle2.default, null, 'What Our Patients Say...'), _react2.default.createElement(Testimonial, null, _react2.default.createElement(Quote, null, '"', testimonials[this.state.testimonialIndex].quote, '"'), _react2.default.createElement(PatientName, null, '- ', testimonials[this.state.testimonialIndex].name), _react2.default.createElement(Location, null, testimonials[this.state.testimonialIndex].location)));
+			return _react2.default.createElement(TestimonialsContainer, { id: 'testimonials', __source: {
+					fileName: _jsxFileName,
+					lineNumber: 50
+				}
+			}, _react2.default.createElement(_SectionTitle2.default, {
+				__source: {
+					fileName: _jsxFileName,
+					lineNumber: 51
+				}
+			}, 'What Our Patients Say...'), _react2.default.createElement(Testimonial, {
+				__source: {
+					fileName: _jsxFileName,
+					lineNumber: 55
+				}
+			}, _react2.default.createElement(Quote, {
+				__source: {
+					fileName: _jsxFileName,
+					lineNumber: 56
+				}
+			}, '"', testimonials[this.state.testimonialIndex].quote, '"'), _react2.default.createElement(PatientName, {
+				__source: {
+					fileName: _jsxFileName,
+					lineNumber: 61
+				}
+			}, '- ', testimonials[this.state.testimonialIndex].name), _react2.default.createElement(Location, {
+				__source: {
+					fileName: _jsxFileName,
+					lineNumber: 64
+				}
+			}, testimonials[this.state.testimonialIndex].location)));
 		}
 	}]);
 

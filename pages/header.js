@@ -25,7 +25,7 @@ export default Header
 const HeaderContainer = styled.div`
   height: 530px;
 	overflow: hidden;
-	background: radial-gradient(center, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.32)), url('../static/stamford2.jpg');
+	background: radial-gradient(center, rgba(0, 0, 0, .5) 40%, rgba(0, 0, 0, .3) 60%), url('../static/stamford2.jpg');
   background-position: center bottom;
   background-size: cover; 
   ${mediaQuery.tablet`height: 500px;`}
@@ -36,12 +36,13 @@ const HeaderText = styled.div`
   text-align: center;
   width: 800px;
   margin: auto;
-  margin-top: 90px;
+  margin-top: 75px;
 	max-width: 85%;
 	color: #fff;
   h1: {
 		text-align: center;
 		letter-spacing: -.02em;
+    
 	}
   ${mediaQuery.tablet`
       margin-top: 80px;  
@@ -56,7 +57,6 @@ const HeaderText = styled.div`
     font-weight: 400;
     text-shadow: 2px 2px 10px rgba(0,0,0,.05);
     ${mediaQuery.tablet`font-size: 2em;`}
-
 `
 
  const HeaderSubtitle = styled.h3`

@@ -26,6 +26,8 @@ var _mediaQuery2 = _interopRequireDefault(_mediaQuery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var _jsxFileName = '/Users/nicolemayo/Desktop/acupuncture-react/pages/techniques.js';
+
 var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n\tpadding: 60px;\n  ', '\n'], ['\n\tpadding: 60px;\n  ', '\n']),
     _templateObject2 = (0, _taggedTemplateLiteral3.default)(['padding: 50px 10px'], ['padding: 50px 10px']),
     _templateObject3 = (0, _taggedTemplateLiteral3.default)(['\n  max-width: 1100px;\n  margin: 80px auto 0;\n  text-align: center;\n  ', '\n'], ['\n  max-width: 1100px;\n  margin: 80px auto 0;\n  text-align: center;\n  ', '\n']),
@@ -36,7 +38,91 @@ var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n\tpadding: 60px;\
     _templateObject8 = (0, _taggedTemplateLiteral3.default)([' \n    width: 65%;\n  '], [' \n    width: 65%;\n  ']);
 
 var Techniques = function Techniques() {
-  return _react2.default.createElement(TechniquesContainer, { id: 'techniques' }, _react2.default.createElement(_SectionTitle2.default, null, 'Our Techniques'), _react2.default.createElement(TechniquesList, null, _react2.default.createElement(TechniqueItem, null, _react2.default.createElement(Img1, { src: '../static/icons/acupuncture.png' }), _react2.default.createElement('p', null, 'Acupuncture')), _react2.default.createElement(TechniqueItem, null, _react2.default.createElement('img', { src: '../static/icons/moxa.png' }), _react2.default.createElement('p', null, 'Moxa')), _react2.default.createElement(TechniqueItem, null, _react2.default.createElement('img', { src: '../static/icons/cupping.png' }), _react2.default.createElement('p', null, 'Cupping')), _react2.default.createElement(TechniqueItem, null, _react2.default.createElement('img', { src: '../static/icons/gua-sha.png' }), _react2.default.createElement('p', null, 'Gua Sha')), _react2.default.createElement(TechniqueItem, null, _react2.default.createElement('img', { src: '../static/icons/herbal.png' }), _react2.default.createElement('p', null, 'Herbs'))));
+  return _react2.default.createElement(TechniquesContainer, { id: 'techniques', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    }
+  }, _react2.default.createElement(_SectionTitle2.default, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    }
+  }, 'Our Techniques'), _react2.default.createElement(TechniquesList, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    }
+  }, _react2.default.createElement(TechniqueItem, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    }
+  }, _react2.default.createElement(Img1, { src: '../static/icons/acupuncture.png', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    }
+  }), _react2.default.createElement('p', {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    }
+  }, 'Acupuncture')), _react2.default.createElement(TechniqueItem, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    }
+  }, _react2.default.createElement('img', { src: '../static/icons/moxa.png', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    }
+  }), _react2.default.createElement('p', {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    }
+  }, 'Moxa')), _react2.default.createElement(TechniqueItem, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    }
+  }, _react2.default.createElement('img', { src: '../static/icons/cupping.png', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    }
+  }), _react2.default.createElement('p', {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    }
+  }, 'Cupping')), _react2.default.createElement(TechniqueItem, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    }
+  }, _react2.default.createElement('img', { src: '../static/icons/gua-sha.png', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    }
+  }), _react2.default.createElement('p', {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    }
+  }, 'Gua Sha')), _react2.default.createElement(TechniqueItem, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    }
+  }, _react2.default.createElement('img', { src: '../static/icons/herbal.png', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    }
+  }), _react2.default.createElement('p', {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    }
+  }, 'Herbs'))));
 };
 
 exports.default = Techniques;

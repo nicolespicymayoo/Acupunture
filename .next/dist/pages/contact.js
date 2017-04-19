@@ -26,6 +26,8 @@ var _mediaQuery2 = _interopRequireDefault(_mediaQuery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var _jsxFileName = '/Users/nicolemayo/Desktop/acupuncture-react/pages/contact.js';
+
 var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n\tpadding:0;\n  position: relative;\n'], ['\n\tpadding:0;\n  position: relative;\n']),
     _templateObject2 = (0, _taggedTemplateLiteral3.default)(['\n  position: absolute;\n  top: 30px;\n  width: 100%;\n  text-align: center;\n  margin: 0 auto;\n'], ['\n  position: absolute;\n  top: 30px;\n  width: 100%;\n  text-align: center;\n  margin: 0 auto;\n']),
     _templateObject3 = (0, _taggedTemplateLiteral3.default)(['\n\tmargin-top: 40px;\n\tmargin-bottom: 0;\n  font-size: 1.7em;\n\t', '\n'], ['\n\tmargin-top: 40px;\n\tmargin-bottom: 0;\n  font-size: 1.7em;\n\t', '\n']),
@@ -41,7 +43,80 @@ var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n\tpadding:0;\n  p
     _templateObject13 = (0, _taggedTemplateLiteral3.default)(['\n\tline-height: 1.52;\n'], ['\n\tline-height: 1.52;\n']);
 
 var Contact = function Contact() {
-	return _react2.default.createElement(ContactContainer, { id: 'contact' }, _react2.default.createElement(ContactTitle, null, _react2.default.createElement(SectionTitlePadding, null, 'Make an Appointment'), _react2.default.createElement(SectionSubtitle, null, 'Call or Text: ', _react2.default.createElement('a', { href: 'tel:+1-914-843-1052' }, '914-843-1052'))), _react2.default.createElement(ContactItemCT, null, _react2.default.createElement('h2', null, 'Stamford Clinic'), _react2.default.createElement(ContactDay, null, 'Monday, Wednesday, Thursday'), _react2.default.createElement(ContactAdress, null, '1250 Summer Street, Suite 304', _react2.default.createElement('br', null), 'Stamford, CT 06905')), _react2.default.createElement(ContactItemNY, null, _react2.default.createElement('h2', null, 'New York Clinic'), _react2.default.createElement(ContactDay, null, 'Tuesday and Friday'), _react2.default.createElement(ContactAdress, null, '600 Mamaroneck Ave, Suite 427', _react2.default.createElement('br', null), 'Harrison, NY 10528')));
+	return _react2.default.createElement(ContactContainer, { id: 'contact', __source: {
+			fileName: _jsxFileName,
+			lineNumber: 7
+		}
+	}, _react2.default.createElement(ContactTitle, {
+		__source: {
+			fileName: _jsxFileName,
+			lineNumber: 8
+		}
+	}, _react2.default.createElement(SectionTitlePadding, {
+		__source: {
+			fileName: _jsxFileName,
+			lineNumber: 9
+		}
+	}, 'Make an Appointment'), _react2.default.createElement(SectionSubtitle, {
+		__source: {
+			fileName: _jsxFileName,
+			lineNumber: 12
+		}
+	}, 'Call or Text: ', _react2.default.createElement('a', { href: 'tel:+1-914-843-1052', __source: {
+			fileName: _jsxFileName,
+			lineNumber: 13
+		}
+	}, '914-843-1052'))), _react2.default.createElement(ContactItemCT, {
+		__source: {
+			fileName: _jsxFileName,
+			lineNumber: 17
+		}
+	}, _react2.default.createElement('h2', {
+		__source: {
+			fileName: _jsxFileName,
+			lineNumber: 18
+		}
+	}, 'Stamford Clinic'), _react2.default.createElement(ContactDay, {
+		__source: {
+			fileName: _jsxFileName,
+			lineNumber: 19
+		}
+	}, 'Monday, Wednesday, Thursday'), _react2.default.createElement(ContactAdress, {
+		__source: {
+			fileName: _jsxFileName,
+			lineNumber: 22
+		}
+	}, '1250 Summer Street, Suite 304', _react2.default.createElement('br', {
+		__source: {
+			fileName: _jsxFileName,
+			lineNumber: 23
+		}
+	}), 'Stamford, CT 06905')), _react2.default.createElement(ContactItemNY, {
+		__source: {
+			fileName: _jsxFileName,
+			lineNumber: 27
+		}
+	}, _react2.default.createElement('h2', {
+		__source: {
+			fileName: _jsxFileName,
+			lineNumber: 28
+		}
+	}, 'New York Clinic'), _react2.default.createElement(ContactDay, {
+		__source: {
+			fileName: _jsxFileName,
+			lineNumber: 29
+		}
+	}, 'Tuesday and Friday'), _react2.default.createElement(ContactAdress, {
+		__source: {
+			fileName: _jsxFileName,
+			lineNumber: 30
+		}
+	}, '600 Mamaroneck Ave, Suite 427', _react2.default.createElement('br', {
+		__source: {
+			fileName: _jsxFileName,
+			lineNumber: 31
+		}
+	}), 'Harrison, NY 10528')));
 };
 
 exports.default = Contact;

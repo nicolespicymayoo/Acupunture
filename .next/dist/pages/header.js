@@ -26,12 +26,14 @@ var _mediaQuery2 = _interopRequireDefault(_mediaQuery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n  height: 530px;\n\toverflow: hidden;\n\tbackground: radial-gradient(center, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.32)), url(\'../static/stamford2.jpg\');\n  background-position: center bottom;\n  background-size: cover; \n  ', '\n'], ['\n  height: 530px;\n\toverflow: hidden;\n\tbackground: radial-gradient(center, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.32)), url(\'../static/stamford2.jpg\');\n  background-position: center bottom;\n  background-size: cover; \n  ', '\n']),
+var _jsxFileName = '/Users/nicolemayo/Desktop/acupuncture-react/pages/header.js';
+
+var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n  height: 530px;\n\toverflow: hidden;\n\tbackground: radial-gradient(center, rgba(0, 0, 0, .5) 40%, rgba(0, 0, 0, .3) 60%), url(\'../static/stamford2.jpg\');\n  background-position: center bottom;\n  background-size: cover; \n  ', '\n'], ['\n  height: 530px;\n\toverflow: hidden;\n\tbackground: radial-gradient(center, rgba(0, 0, 0, .5) 40%, rgba(0, 0, 0, .3) 60%), url(\'../static/stamford2.jpg\');\n  background-position: center bottom;\n  background-size: cover; \n  ', '\n']),
     _templateObject2 = (0, _taggedTemplateLiteral3.default)(['height: 500px;'], ['height: 500px;']),
-    _templateObject3 = (0, _taggedTemplateLiteral3.default)(['\n  z-index: 9999;\n  text-align: center;\n  width: 800px;\n  margin: auto;\n  margin-top: 90px;\n\tmax-width: 85%;\n\tcolor: #fff;\n  h1: {\n\t\ttext-align: center;\n\t\tletter-spacing: -.02em;\n\t}\n  ', '\n  ', '\n'], ['\n  z-index: 9999;\n  text-align: center;\n  width: 800px;\n  margin: auto;\n  margin-top: 90px;\n\tmax-width: 85%;\n\tcolor: #fff;\n  h1: {\n\t\ttext-align: center;\n\t\tletter-spacing: -.02em;\n\t}\n  ', '\n  ', '\n']),
+    _templateObject3 = (0, _taggedTemplateLiteral3.default)(['\n  z-index: 9999;\n  text-align: center;\n  width: 800px;\n  margin: auto;\n  margin-top: 75px;\n\tmax-width: 85%;\n\tcolor: #fff;\n  h1: {\n\t\ttext-align: center;\n\t\tletter-spacing: -.02em;\n    \n\t}\n  ', '\n  ', '\n'], ['\n  z-index: 9999;\n  text-align: center;\n  width: 800px;\n  margin: auto;\n  margin-top: 75px;\n\tmax-width: 85%;\n\tcolor: #fff;\n  h1: {\n\t\ttext-align: center;\n\t\tletter-spacing: -.02em;\n    \n\t}\n  ', '\n  ', '\n']),
     _templateObject4 = (0, _taggedTemplateLiteral3.default)(['\n      margin-top: 80px;  \n  '], ['\n      margin-top: 80px;  \n  ']),
     _templateObject5 = (0, _taggedTemplateLiteral3.default)(['\n      margin-top: 50px;\n  '], ['\n      margin-top: 50px;\n  ']),
-    _templateObject6 = (0, _taggedTemplateLiteral3.default)(['\n    font-family: \'Montserrat\';\n    font-size: 2.7em;\n    font-weight: 400;\n    text-shadow: 2px 2px 10px rgba(0,0,0,.05);\n    ', '\n\n'], ['\n    font-family: \'Montserrat\';\n    font-size: 2.7em;\n    font-weight: 400;\n    text-shadow: 2px 2px 10px rgba(0,0,0,.05);\n    ', '\n\n']),
+    _templateObject6 = (0, _taggedTemplateLiteral3.default)(['\n    font-family: \'Montserrat\';\n    font-size: 2.7em;\n    font-weight: 400;\n    text-shadow: 2px 2px 10px rgba(0,0,0,.05);\n    ', '\n'], ['\n    font-family: \'Montserrat\';\n    font-size: 2.7em;\n    font-weight: 400;\n    text-shadow: 2px 2px 10px rgba(0,0,0,.05);\n    ', '\n']),
     _templateObject7 = (0, _taggedTemplateLiteral3.default)(['font-size: 2em;'], ['font-size: 2em;']),
     _templateObject8 = (0, _taggedTemplateLiteral3.default)(['\n    padding-top: 20px;\n    font-size: 1.25em;\n    font-weight: 300;\n    line-height: 1.7;\n    text-shadow: 0 1px 5px rgba(0,0,0,.3);\n    ', '\n'], ['\n    padding-top: 20px;\n    font-size: 1.25em;\n    font-weight: 300;\n    line-height: 1.7;\n    text-shadow: 0 1px 5px rgba(0,0,0,.3);\n    ', '\n']),
     _templateObject9 = (0, _taggedTemplateLiteral3.default)(['font-size: 1.15em;'], ['font-size: 1.15em;']),
@@ -39,7 +41,51 @@ var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n  height: 530px;\
     _templateObject11 = (0, _taggedTemplateLiteral3.default)(['\n      letter-spacing: .42px;\n    '], ['\n      letter-spacing: .42px;\n    ']);
 
 var Header = function Header() {
-  return _react2.default.createElement(HeaderContainer, null, _react2.default.createElement(_navbar2.default, null), _react2.default.createElement(HeaderText, null, _react2.default.createElement(HeaderTitle, null, 'Your Health, Your Trust, Your Choice.'), _react2.default.createElement(HeaderSubtitle, null, _react2.default.createElement('p', null, 'The most authentic traditional Chinese medical treatment'), _react2.default.createElement('p', null, 'in Stamford, CT and Harrison, NY.')), _react2.default.createElement('a', { href: '#contact' }, _react2.default.createElement(Button, null, 'Make an Appointment'))));
+  return _react2.default.createElement(HeaderContainer, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    }
+  }, _react2.default.createElement(_navbar2.default, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    }
+  }), _react2.default.createElement(HeaderText, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    }
+  }, _react2.default.createElement(HeaderTitle, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    }
+  }, 'Your Health, Your Trust, Your Choice.'), _react2.default.createElement(HeaderSubtitle, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    }
+  }, _react2.default.createElement('p', {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    }
+  }, 'The most authentic traditional Chinese medical treatment'), _react2.default.createElement('p', {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    }
+  }, 'in Stamford, CT and Harrison, NY.')), _react2.default.createElement('a', { href: '#contact', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    }
+  }, _react2.default.createElement(Button, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    }
+  }, 'Make an Appointment'))));
 };
 
 exports.default = Header;
