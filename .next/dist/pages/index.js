@@ -48,7 +48,7 @@ var _contact = require('./contact');
 
 var _contact2 = _interopRequireDefault(_contact);
 
-var _mediaQuery = require('./mediaQuery');
+var _mediaQuery = require('../helpers/mediaQuery');
 
 var _mediaQuery2 = _interopRequireDefault(_mediaQuery);
 

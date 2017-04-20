@@ -20,7 +20,7 @@ var _styledComponents = require('styled-components');
 
 var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
-var _mediaQuery = require('./mediaQuery');
+var _mediaQuery = require('../helpers/mediaQuery');
 
 var _mediaQuery2 = _interopRequireDefault(_mediaQuery);
 

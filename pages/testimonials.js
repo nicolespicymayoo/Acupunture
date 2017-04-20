@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import SectionTitle from '../components/SectionTitle'
-import mediaQuery from './mediaQuery'
+import mediaQuery from '../helpers/mediaQuery'
 
 const testimonials = [
 	{

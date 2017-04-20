@@ -40,7 +40,7 @@ var _Menu = require('./Menu.js');
 
 var _Menu2 = _interopRequireDefault(_Menu);
 
-var _mediaQuery = require('./mediaQuery');
+var _mediaQuery = require('../helpers/mediaQuery');
 
 var _mediaQuery2 = _interopRequireDefault(_mediaQuery);
 

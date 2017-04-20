@@ -8,7 +8,7 @@ import Doctor from './doctor'
 import Pricing from './pricing'
 import Testimonials from './testimonials'
 import Contact from './contact'
-import mediaQuery from './mediaQuery'
+import mediaQuery from '../helpers/mediaQuery'
 
 export default () => (
   <Home>

@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import styled from 'styled-components'
 import Menu from './Menu.js'
-import mediaQuery from './mediaQuery'
+import mediaQuery from '../helpers/mediaQuery'
 
 
 const NavIcon = (props) => (

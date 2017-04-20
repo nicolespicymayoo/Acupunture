@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 import styled from 'styled-components'
-import mediaQuery from './mediaQuery'
+import mediaQuery from '../helpers/mediaQuery'
 
 const PhoneIcon = () => (
   <svg x="0px" y="0px"

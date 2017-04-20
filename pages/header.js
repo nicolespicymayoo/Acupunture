@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Navbar from './navbar'
 import styled from 'styled-components'
-import mediaQuery from './mediaQuery'
+import mediaQuery from '../helpers/mediaQuery'
 
 const Header = () => (
   <HeaderContainer>

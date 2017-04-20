@@ -1,7 +1,7 @@
 import React from 'react'
 import SectionTitle from '../components/SectionTitle.js'
 import styled from 'styled-components'
-import mediaQuery from './mediaQuery'
+import mediaQuery from '../helpers/mediaQuery'
 
 const Techniques = () => (
   <TechniquesContainer id="techniques">

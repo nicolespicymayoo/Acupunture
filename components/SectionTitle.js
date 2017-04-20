@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import mediaQuery from '../pages/mediaQuery'
+import mediaQuery from '../helpers/mediaQuery'
 
 const SectionTitle = styled.h2`
 	text-align: center;

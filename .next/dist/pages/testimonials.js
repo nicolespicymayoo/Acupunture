@@ -40,7 +40,7 @@ var _SectionTitle = require('../components/SectionTitle');
 
 var _SectionTitle2 = _interopRequireDefault(_SectionTitle);
 
-var _mediaQuery = require('./mediaQuery');
+var _mediaQuery = require('../helpers/mediaQuery');
 
 var _mediaQuery2 = _interopRequireDefault(_mediaQuery);
 
